@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Surya Pranav's Resume</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+  <style>
+      body{
+        font-family: Georgia, serif;
+      }
+  </style>
+</head>
+<body>
+
+    
+
+    <!-- Header - Contact Information -->
+  <header class="bg-warning text-white text-center">
+      <div class="container">
+          <h1 class="display-4">Annadanam Surya Pranav</h1>
+          <h3 class="display-10"> Computer Software Engineer</h3>
+      </div>
+  </header>
+  <section class=" container mt-5">
+    <div class="row justify-content-between">
+      <div class="col" style="font-size: 1em; font-weight: bold;">
+            Hyderabad, Telangana 501511<br>
+            Email: asuryapranav999@gmail.com<br>
+            LinkedIn: <a href="http://www.linkedin.com/in/surya-pranav-annadanam-4a44a9271" target="_blank">Surya Pranav's LinkedIn</a><br>
+            Phone: +91 9177341390<br>
+      </div>
+        <div class="img-fluid mt-auto">
+            {% include 'creative.html' %}
+        </div>
+    </div>
+  </section>
+    
+    <!-- Education Section -->
+  <section class="bg-light container mt-5">
+      <h2>Education</h2>
+      <div class="row">
+          <div class="col-sm">
+              <p>CVR College of Engineering, Hyderabad, India</p>
+              <p>Narayana Junior College, Hyderabad, India</p>
+            <p>Bhashyam High School, Hyderabad, India</p>
+          </div>
+        <div class="col-sm">
+          <p>BTech in CSE (GPA: 8.14/10.0)</p>
+            <p>Intermediate (CGPA: 93.1%)</p>
+          <p>Matriculation (GPA: 9.7/10.0)</p>
+        </div>
+          <div class="col-sm">
+            <p>April 2024</p>
+            <p>March 2020</p>
+            <p>March 2018</p>
+          </div>
+      </div>
+  </section>
+
+
+    <!-- Projects Section -->
+    <section class="bg-light container mt-5">
+        <h2>Projects</h2>
+        Image Compression using Generative Adversarial Networks (GANS)<br>
+      <a href="https://github.com/surya998/Image-Compression-using-GANs/tree/master" target="_blank">https://github.com/surya998/Image-Compression-using-GANs/tree/master</a>
+        <ul>
+            <li>Developed a novel image compression technique by leveraging the generative capabilities of GANS.</li>
+            <li>Administered using Flickr dataset (11k images) and CNN.</li>
+            <li>Compression rate and quality are on par with JPG (used PSNR and SSI as metrics).</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-light container mt-5">
+        <h2>Skills</h2>
+        <ul>
+            {% for skill in skills %}
+            <li>{{skill}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <!-- Areas of Interest Section -->
+    <section class="bg-light container mt-5">
+        <h2>Areas of Interest</h2>
+        <ul>
+            <li>Artificial Intelligence</li>
+            <li>Robotics</li>
+            <li>Machine Learning</li>
+        </ul>
+    </section>
+
+    <!-- Achievements and Extracurricular Activities Section -->
+    <section class="bg-light container mt-5">
+        <h2>Achievements and Extracurricular Activities</h2>
+        <ul>
+            {% for achieve in ach %}
+            <li>{{achieve}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <!-- Creative html -->
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+    <script>
+        // Add your custom JavaScript code here
+    </script>
+
+</body>
+</html>
